@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+  base: '/nep-ai6to10/',
   root: '.',
   build: {
     rollupOptions: {
