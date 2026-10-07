@@ -1,0 +1,702 @@
+/* ============================================================
+   National Educational Portal (NEP) — Custom Styles
+   Built on top of Bootstrap 5
+   ============================================================ */
+
+:root {
+  --nep-primary: #1a4f8b;
+  --nep-primary-dark: #0f3563;
+  --nep-primary-light: #2d6cb8;
+  --nep-accent: #4263eb;
+  --nep-indigo: #3b3b98;
+  --nep-gold: #f59f00;
+  --nep-success: #2f9e44;
+  --nep-warning: #f59f00;
+  --nep-danger: #e03131;
+  --nep-bg: #f5f7fa;
+  --nep-card-bg: #ffffff;
+  --nep-text: #2d3748;
+  --nep-text-muted: #6b7280;
+  --nep-border: #e2e8f0;
+  --nep-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --nep-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --nep-radius: 12px;
+  --nep-font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ---- Base ---- */
+body {
+  font-family: var(--nep-font);
+  background-color: var(--nep-bg);
+  color: var(--nep-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--nep-primary-dark);
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-primary-custom { color: var(--nep-primary) !important; }
+.text-accent { color: var(--nep-accent) !important; }
+.bg-primary-custom { background-color: var(--nep-primary) !important; }
+.bg-light-custom { background-color: var(--nep-bg) !important; }
+
+/* ---- Navbar ---- */
+.nep-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0.7rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.nep-navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--nep-primary);
+  letter-spacing: -0.02em;
+}
+
+.nep-navbar .navbar-brand i {
+  color: var(--nep-accent);
+  margin-right: 6px;
+}
+
+.nep-navbar .nav-link {
+  font-weight: 500;
+  color: var(--nep-text) !important;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 0.92rem;
+}
+
+.nep-navbar .nav-link:hover,
+.nep-navbar .nav-link.active {
+  color: var(--nep-primary) !important;
+  background-color: rgba(26, 79, 139, 0.07);
+}
+
+.nep-navbar .btn-login {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 1.1rem;
+  border: 1.5px solid var(--nep-primary);
+  color: var(--nep-primary);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.nep-navbar .btn-login:hover {
+  background: var(--nep-primary);
+  color: #fff;
+}
+
+.nep-navbar .btn-register {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 1.1rem;
+  background: var(--nep-primary);
+  border: 1.5px solid var(--nep-primary);
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nep-navbar .btn-register:hover {
+  background: var(--nep-primary-dark);
+  border-color: var(--nep-primary-dark);
+}
+
+/* ---- Hero ---- */
+.nep-hero {
+  background: linear-gradient(135deg, #0f3563 0%, #1a4f8b 45%, #2d6cb8 100%);
+  color: #fff;
+  padding: 4.5rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.nep-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+
+.nep-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+
+.nep-hero h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.nep-hero p {
+  font-size: 1.12rem;
+  opacity: 0.9;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+.nep-hero-search {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.nep-hero-search .input-group {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.nep-hero-search .form-control {
+  border: none;
+  box-shadow: none;
+  font-size: 0.95rem;
+}
+
+.nep-hero-search .btn-search {
+  background: var(--nep-accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+.nep-hero-search .btn-search:hover {
+  background: var(--nep-primary);
+}
+
+.nep-hero .btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nep-hero .btn-outline-light:hover {
+  background: #fff;
+  color: var(--nep-primary);
+  border-color: #fff;
+}
+
+/* ---- Section spacing ---- */
+.nep-section {
+  padding: 3.5rem 0;
+}
+
+.nep-section-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.nep-section-subtitle {
+  color: var(--nep-text-muted);
+  font-size: 0.98rem;
+  margin-bottom: 2.2rem;
+}
+
+/* ---- Cards ---- */
+.nep-card {
+  background: var(--nep-card-bg);
+  border: 1px solid var(--nep-border);
+  border-radius: var(--nep-radius);
+  box-shadow: var(--nep-shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.nep-card:hover {
+  box-shadow: var(--nep-shadow-hover);
+  transform: translateY(-3px);
+}
+
+.nep-card .card-img-top,
+.nep-card .nep-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--nep-bg);
+}
+
+.nep-card .card-body {
+  padding: 1.3rem;
+}
+
+.nep-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.nep-card .card-text {
+  color: var(--nep-text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Badges ---- */
+.nep-badge {
+  display: inline-block;
+  padding: 0.28em 0.7em;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.nep-badge-primary { background: rgba(26, 79, 139, 0.1); color: var(--nep-primary); }
+.nep-badge-accent  { background: rgba(66, 99, 235, 0.1); color: var(--nep-accent); }
+.nep-badge-success { background: rgba(47, 158, 68, 0.12); color: var(--nep-success); }
+.nep-badge-warning { background: rgba(245, 159, 0, 0.12); color: var(--nep-warning); }
+.nep-badge-danger  { background: rgba(224, 49, 49, 0.1); color: var(--nep-danger); }
+.nep-badge-info    { background: rgba(45, 108, 184, 0.1); color: var(--nep-primary-light); }
+
+/* ---- Buttons ---- */
+.btn-primary-custom {
+  background: var(--nep-primary);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.55rem 1.4rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background: var(--nep-primary-dark);
+  color: #fff;
+}
+
+.btn-accent {
+  background: var(--nep-accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.55rem 1.4rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-accent:hover {
+  background: var(--nep-primary);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  border: 1.5px solid var(--nep-primary);
+  color: var(--nep-primary);
+  font-weight: 600;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+  background: var(--nep-primary);
+  color: #fff;
+}
+
+/* ---- Stats section ---- */
+.nep-stats {
+  background: var(--nep-primary-dark);
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.nep-stat-item {
+  text-align: center;
+}
+
+.nep-stat-item .stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.nep-stat-item .stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+/* ---- How It Works ---- */
+.nep-step {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.nep-step-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(26, 79, 139, 0.08);
+  color: var(--nep-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.6rem;
+}
+
+.nep-step h5 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.nep-step p {
+  font-size: 0.88rem;
+  color: var(--nep-text-muted);
+}
+
+/* ---- Footer ---- */
+.nep-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 0 1.5rem;
+}
+
+.nep-footer h5 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nep-footer a {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  display: block;
+  padding: 0.2rem 0;
+  transition: color 0.2s;
+}
+
+.nep-footer a:hover {
+  color: #fff;
+}
+
+.nep-footer .footer-brand {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nep-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.2rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+/* ---- Tables ---- */
+.nep-table {
+  background: #fff;
+  border-radius: var(--nep-radius);
+  overflow: hidden;
+  box-shadow: var(--nep-shadow);
+}
+
+.nep-table table {
+  margin-bottom: 0;
+}
+
+.nep-table thead th {
+  background: var(--nep-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: none;
+  padding: 0.85rem 1rem;
+}
+
+.nep-table tbody td {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  border-color: var(--nep-border);
+}
+
+.nep-table tbody tr:hover {
+  background: rgba(26, 79, 139, 0.03);
+}
+
+/* ---- Dashboard ---- */
+.nep-dash-sidebar {
+  background: #fff;
+  border-right: 1px solid var(--nep-border);
+  min-height: calc(100vh - 70px);
+  padding: 1.5rem 0;
+}
+
+.nep-dash-sidebar .nav-link {
+  color: var(--nep-text);
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  margin: 2px 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.nep-dash-sidebar .nav-link:hover {
+  background: rgba(26, 79, 139, 0.06);
+  color: var(--nep-primary);
+}
+
+.nep-dash-sidebar .nav-link.active {
+  background: var(--nep-primary);
+  color: #fff;
+}
+
+.nep-dash-sidebar .nav-link i {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.nep-dash-content {
+  padding: 2rem;
+}
+
+.nep-dash-card {
+  background: #fff;
+  border: 1px solid var(--nep-border);
+  border-radius: var(--nep-radius);
+  padding: 1.3rem;
+  box-shadow: var(--nep-shadow);
+  transition: all 0.3s ease;
+}
+
+.nep-dash-card:hover {
+  box-shadow: var(--nep-shadow-hover);
+}
+
+.nep-dash-card .dash-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.nep-dash-card .dash-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--nep-primary-dark);
+  line-height: 1;
+}
+
+.nep-dash-card .dash-label {
+  font-size: 0.82rem;
+  color: var(--nep-text-muted);
+  margin-top: 0.25rem;
+}
+
+/* ---- Auth pages ---- */
+.nep-auth-wrapper {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #eef2f7 0%, #e0e7f0 100%);
+}
+
+.nep-auth-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 460px;
+  width: 100%;
+}
+
+.nep-auth-card.wide {
+  max-width: 560px;
+}
+
+.nep-auth-header {
+  background: var(--nep-primary);
+  color: #fff;
+  padding: 1.8rem 2rem 1.5rem;
+  text-align: center;
+}
+
+.nep-auth-header h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.nep-auth-header p {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  opacity: 0.85;
+}
+
+.nep-auth-body {
+  padding: 2rem;
+}
+
+.nep-auth-body .form-label {
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 0.35rem;
+}
+
+.nep-auth-body .form-control {
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--nep-border);
+  font-size: 0.92rem;
+}
+
+.nep-auth-body .form-control:focus {
+  border-color: var(--nep-primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(26, 79, 139, 0.12);
+}
+
+.nep-auth-body .btn-primary-custom {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+/* ---- Page header (inner pages) ---- */
+.nep-page-header {
+  background: linear-gradient(135deg, #0f3563, #1a4f8b);
+  color: #fff;
+  padding: 2.5rem 0 2rem;
+}
+
+.nep-page-header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.nep-page-header p {
+  margin: 0.4rem 0 0;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* ---- Filter bar ---- */
+.nep-filter-bar {
+  background: #fff;
+  border: 1px solid var(--nep-border);
+  border-radius: var(--nep-radius);
+  padding: 1.2rem;
+  box-shadow: var(--nep-shadow);
+  margin-bottom: 2rem;
+}
+
+.nep-filter-bar .form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.nep-filter-bar .form-control,
+.nep-filter-bar .form-select {
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--nep-border);
+}
+
+.nep-filter-bar .form-control:focus,
+.nep-filter-bar .form-select:focus {
+  border-color: var(--nep-primary-light);
+  box-shadow: 0 0 0 0.15rem rgba(26, 79, 139, 0.1);
+}
+
+/* ---- Info row ---- */
+.nep-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  font-size: 0.87rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nep-info-row:last-child { border-bottom: none; }
+.nep-info-row .label { color: var(--nep-text-muted); }
+.nep-info-row .value { font-weight: 600; }
+
+/* ---- Animations ---- */
+@keyframes nep-fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.nep-animate {
+  animation: nep-fade-up 0.5s ease forwards;
+}
+
+.nep-animate-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.nep-animate-delay-2 { animation-delay: 0.2s; opacity: 0; }
+.nep-animate-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* ---- Misc ---- */
+.nep-divider {
+  height: 1px;
+  background: var(--nep-border);
+  margin: 1.5rem 0;
+}
+
+.nep-empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--nep-text-muted);
+}
+
+.nep-empty-state i {
+  font-size: 3rem;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .nep-hero h1 { font-size: 1.9rem; }
+  .nep-hero p { font-size: 1rem; }
+  .nep-section { padding: 2.5rem 0; }
+  .nep-section-title { font-size: 1.4rem; }
+  .nep-dash-content { padding: 1.2rem; }
+  .nep-stat-item .stat-number { font-size: 1.8rem; }
+}
