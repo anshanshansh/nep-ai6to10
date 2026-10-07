@@ -22,7 +22,7 @@ function courseCard(course) {
           <div class="nep-info-row"><span class="label"><i class="bi bi-list-check"></i> Eligibility</span><span class="value small">${course.eligibility}</span></div>
           <div class="mt-3 d-flex gap-2">
             <button class="btn btn-primary-custom btn-sm flex-fill" data-bs-toggle="modal" data-bs-target="#courseModal" data-course-id="${course.id}">View Details</button>
-            <a href="/login.html" class="btn btn-outline-custom btn-sm">Apply</a>
+            <a href="./login.html" class="btn btn-outline-custom btn-sm">Apply</a>
           </div>
         </div>
       </div>
@@ -138,8 +138,8 @@ document.getElementById('courseModal').addEventListener('show.bs.modal', (e) => 
     <div class="nep-info-row"><span class="label">Total Seats</span><span class="value">${course.seats}</span></div>
     <div class="nep-info-row"><span class="label">Eligibility</span><span class="value">${course.eligibility}</span></div>
     <div class="mt-3 d-flex gap-2">
-      <a href="/login.html" class="btn btn-primary-custom btn-sm">Apply Now</a>
-      <a href="/institutions.html" class="btn btn-outline-custom btn-sm">View Institution</a>
+      <a href="./login.html" class="btn btn-primary-custom btn-sm">Apply Now</a>
+      <a href="./institutions.html" class="btn btn-outline-custom btn-sm">View Institution</a>
     </div>
   `
 })

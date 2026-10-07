@@ -53,7 +53,7 @@ app.innerHTML = `
           <li class="nav-item"><a class="nav-link" href="#" data-section="scholarships"><i class="bi bi-award"></i>Scholarships</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-section="applications"><i class="bi bi-file-earmark-text"></i>Applications</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-section="results"><i class="bi bi-graph-up"></i>Results</a></li>
-          <li class="nav-item"><a class="nav-link" href="/login.html"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
         </ul>
       </div>
 

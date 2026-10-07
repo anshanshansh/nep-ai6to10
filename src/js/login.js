@@ -43,7 +43,7 @@ app.innerHTML = `
           </div>
           <button type="submit" class="btn btn-primary-custom">Login</button>
           <p class="text-center mt-3 mb-0 small text-muted">
-            Don't have an account? <a href="/register.html" class="text-primary-custom fw-semibold">Register here</a>
+            Don't have an account? <a href="./register.html" class="text-primary-custom fw-semibold">Register here</a>
           </p>
         </form>
       </div>

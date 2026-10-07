@@ -128,8 +128,8 @@ document.getElementById('institutionModal').addEventListener('show.bs.modal', (e
     <div class="nep-info-row"><span class="label">Total Courses</span><span class="value">${inst.courses}</span></div>
     <div class="nep-info-row"><span class="label">Total Students</span><span class="value">${inst.students.toLocaleString('en-IN')}</span></div>
     <div class="mt-3 d-flex gap-2">
-      <a href="/courses.html" class="btn btn-primary-custom btn-sm">View Courses</a>
-      <a href="/login.html" class="btn btn-outline-custom btn-sm">Apply Now</a>
+      <a href="./courses.html" class="btn btn-primary-custom btn-sm">View Courses</a>
+      <a href="./login.html" class="btn btn-outline-custom btn-sm">Apply Now</a>
     </div>
   `
 })

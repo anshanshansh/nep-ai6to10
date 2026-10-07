@@ -23,7 +23,7 @@ function institutionCard(inst) {
           <div class="nep-info-row"><span class="label"><i class="bi bi-geo-alt"></i> Location</span><span class="value">${inst.location}</span></div>
           <div class="nep-info-row"><span class="label"><i class="bi bi-star-fill text-warning"></i> Rating</span><span class="value">${inst.rating}/5</span></div>
           <div class="mt-3">
-            <a href="/institutions.html" class="btn btn-outline-custom btn-sm">View Details</a>
+            <a href="./institutions.html" class="btn btn-outline-custom btn-sm">View Details</a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ function courseCard(course) {
           <div class="nep-info-row"><span class="label">Fees</span><span class="value">${course.fees}</span></div>
           <div class="nep-info-row"><span class="label">Eligibility</span><span class="value small">${course.eligibility}</span></div>
           <div class="mt-3">
-            <a href="/courses.html" class="btn btn-outline-custom btn-sm">View Details</a>
+            <a href="./courses.html" class="btn btn-outline-custom btn-sm">View Details</a>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ function scholarshipCard(sch) {
           <div class="nep-info-row"><span class="label">Amount</span><span class="value text-success fw-bold">${sch.amount}</span></div>
           <div class="nep-info-row"><span class="label">Deadline</span><span class="value">${sch.deadline}</span></div>
           <div class="mt-3">
-            <a href="/scholarships.html" class="btn btn-outline-custom btn-sm">View Details</a>
+            <a href="./scholarships.html" class="btn btn-outline-custom btn-sm">View Details</a>
           </div>
         </div>
       </div>
@@ -89,10 +89,10 @@ app.innerHTML = `
         </div>
       </div>
       <div class="d-flex gap-3 justify-content-center flex-wrap mt-4 nep-animate nep-animate-delay-3">
-        <a href="/courses.html" class="btn btn-light btn-lg" style="font-weight:600;color:var(--nep-primary);">
+        <a href="./courses.html" class="btn btn-light btn-lg" style="font-weight:600;color:var(--nep-primary);">
           <i class="bi bi-book"></i> Explore Courses
         </a>
-        <a href="/institutions.html" class="btn btn-outline-light btn-lg">
+        <a href="./institutions.html" class="btn btn-outline-light btn-lg">
           <i class="bi bi-building"></i> Find Institutions
         </a>
       </div>
@@ -107,7 +107,7 @@ app.innerHTML = `
           <h2 class="nep-section-title">Popular Institutions</h2>
           <p class="nep-section-subtitle mb-0">Top-rated institutions across India</p>
         </div>
-        <a href="/institutions.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
+        <a href="./institutions.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
       </div>
       <div class="row">
         ${popularInstitutions.map(institutionCard).join('')}
@@ -123,7 +123,7 @@ app.innerHTML = `
           <h2 class="nep-section-title">Featured Courses</h2>
           <p class="nep-section-subtitle mb-0">Hand-picked programs from leading institutions</p>
         </div>
-        <a href="/courses.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
+        <a href="./courses.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
       </div>
       <div class="row">
         ${featuredCourses.map(courseCard).join('')}
@@ -139,7 +139,7 @@ app.innerHTML = `
           <h2 class="nep-section-title">Scholarships</h2>
           <p class="nep-section-subtitle mb-0">Financial aid opportunities for students</p>
         </div>
-        <a href="/scholarships.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
+        <a href="./scholarships.html" class="btn btn-link text-primary-custom fw-semibold text-decoration-none">View All <i class="bi bi-arrow-right"></i></a>
       </div>
       <div class="row">
         ${featuredScholarships.map(scholarshipCard).join('')}

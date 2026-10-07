@@ -42,7 +42,7 @@ app.innerHTML = `
           <li class="nav-item"><a class="nav-link" href="#" data-section="applications"><i class="bi bi-file-earmark-text"></i>Applications</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-section="scholarships"><i class="bi bi-award"></i>Scholarships</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-section="results"><i class="bi bi-graph-up"></i>Results</a></li>
-          <li class="nav-item"><a class="nav-link" href="/login.html"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
         </ul>
       </div>
 
@@ -56,8 +56,8 @@ app.innerHTML = `
               <p class="text-muted mb-0">${studentProfile.course} • ${studentProfile.institution}</p>
             </div>
             <div class="d-flex gap-2">
-              <a href="/courses.html" class="btn btn-primary-custom btn-sm"><i class="bi bi-search"></i> Browse Courses</a>
-              <a href="/scholarships.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-award"></i> Scholarships</a>
+              <a href="./courses.html" class="btn btn-primary-custom btn-sm"><i class="bi bi-search"></i> Browse Courses</a>
+              <a href="./scholarships.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-award"></i> Scholarships</a>
             </div>
           </div>
 
@@ -138,9 +138,9 @@ app.innerHTML = `
               <div class="nep-dash-card">
                 <h5 class="mb-3">Quick Actions</h5>
                 <div class="d-grid gap-2">
-                  <a href="/courses.html" class="btn btn-primary-custom btn-sm"><i class="bi bi-search"></i> Find New Courses</a>
-                  <a href="/institutions.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-building"></i> Browse Institutions</a>
-                  <a href="/scholarships.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-award"></i> Apply for Scholarships</a>
+                  <a href="./courses.html" class="btn btn-primary-custom btn-sm"><i class="bi bi-search"></i> Find New Courses</a>
+                  <a href="./institutions.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-building"></i> Browse Institutions</a>
+                  <a href="./scholarships.html" class="btn btn-outline-custom btn-sm"><i class="bi bi-award"></i> Apply for Scholarships</a>
                 </div>
               </div>
             </div>

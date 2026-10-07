@@ -21,7 +21,7 @@ function scholarshipCard(sch) {
           <div class="nep-info-row"><span class="label"><i class="bi bi-list-check"></i> Eligibility</span><span class="value small">${sch.eligibility}</span></div>
           <div class="mt-3 d-flex gap-2">
             <button class="btn btn-primary-custom btn-sm flex-fill" data-bs-toggle="modal" data-bs-target="#scholarshipModal" data-sch-id="${sch.id}">View Details</button>
-            <a href="/login.html" class="btn btn-outline-custom btn-sm">Apply</a>
+            <a href="./login.html" class="btn btn-outline-custom btn-sm">Apply</a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@ document.getElementById('scholarshipModal').addEventListener('show.bs.modal', (e
     <div class="nep-info-row"><span class="label">Eligibility</span><span class="value">${sch.eligibility}</span></div>
     <div class="nep-info-row"><span class="label">Application Deadline</span><span class="value text-danger fw-bold">${sch.deadline}</span></div>
     <div class="mt-3 d-flex gap-2">
-      <a href="/login.html" class="btn btn-primary-custom btn-sm">Apply Now</a>
+      <a href="./login.html" class="btn btn-primary-custom btn-sm">Apply Now</a>
     </div>
   `
 })
